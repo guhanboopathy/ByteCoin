@@ -13,8 +13,8 @@ protocol updateUIDelegate {
 }
 struct CoinManager {
     var delegate: updateUIDelegate?
-    let baseURL = "https://rest.coinapi.io/v1/exchangerate/BTC"
-    let apiKey = "YOUR_API_KEY_HERE"
+   // let baseURL = "https://rest.coinapi.io/v1/exchangerate/BTC"
+   // let apiKey = "YOUR_API_KEY_HERE"
     
     let currencyArray = ["AUD", "BRL","CAD","CNY","EUR","GBP","HKD","IDR","ILS","INR","JPY","MXN","NOK","NZD","PLN","RON","RUB","SEK","SGD","USD","ZAR"]
     let url = "https://rest.coinapi.io/v1/exchangerate/BTC/"
@@ -29,6 +29,7 @@ struct CoinManager {
             let task = session.dataTask(with: url) { (data, response, error) in
                 if error != nil {
                     delegate?.handleError(error!)
+                    
                 }
                 else if data != nil {
                     if let safeData = data {

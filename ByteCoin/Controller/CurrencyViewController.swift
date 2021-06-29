@@ -43,6 +43,11 @@ class CurrencyViewController: UIViewController,UIPickerViewDataSource,UIPickerVi
 extension CurrencyViewController: updateUIDelegate {
     func handleError(_ error: Error) {
         print(error)
+        DispatchQueue.main.async {
+            let alertView = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)
+            alertView.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alertView, animated: true, completion: nil)
+        }
     }
     
     func updateCurreny(_ rate: Double) {
@@ -53,9 +58,6 @@ extension CurrencyViewController: updateUIDelegate {
             self.currencyLabel.text = self.selectedCurrency!
             self.bitCoinLabel.text = temp
         }
-        
     }
-    
-    
 }
 
