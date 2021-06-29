@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4862EA31264ECAC800DA5FE2 /* coinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4862EA30264ECAC800DA5FE2 /* coinModel.swift */; };
+		48825DBF268B0D1A00DE5C21 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48825DBE268B0D1A00DE5C21 /* Constants.swift */; };
 		ADA8AC092329367100626376 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA8AC082329367100626376 /* AppDelegate.swift */; };
 		ADA8AC0B2329367100626376 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA8AC0A2329367100626376 /* SceneDelegate.swift */; };
 		ADA8AC0D2329367100626376 /* CurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA8AC0C2329367100626376 /* CurrencyViewController.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		4862EA30264ECAC800DA5FE2 /* coinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coinModel.swift; sourceTree = "<group>"; };
+		48825DBE268B0D1A00DE5C21 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		ADA8AC052329367100626376 /* ByteCoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ByteCoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADA8AC082329367100626376 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADA8AC0A2329367100626376 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 			children = (
 				ADA8AC082329367100626376 /* AppDelegate.swift */,
 				ADA8AC0A2329367100626376 /* SceneDelegate.swift */,
+				48825DBE268B0D1A00DE5C21 /* Constants.swift */,
 				ADA8AC1E2329370F00626376 /* Model */,
 				ADA8AC1D2329370700626376 /* Controller */,
 				ADA8AC1C232936FE00626376 /* View */,
@@ -173,6 +176,7 @@
 				ADA8AC092329367100626376 /* AppDelegate.swift in Sources */,
 				ADA8AC0B2329367100626376 /* SceneDelegate.swift in Sources */,
 				4862EA31264ECAC800DA5FE2 /* coinModel.swift in Sources */,
+				48825DBF268B0D1A00DE5C21 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -25,11 +25,11 @@ class CurrencyViewController: UIViewController,UIPickerViewDataSource,UIPickerVi
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return coinManager.currencyArray[row]
+        return K.currencyArray[row]
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        selectedCurrency = coinManager.currencyArray[row]
-        coinManager.getCoinPrice(for: coinManager.currencyArray[row])
+        selectedCurrency = K.currencyArray[row]
+        coinManager.getCoinPrice(for: K.currencyArray[row])
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -37,15 +37,15 @@ class CurrencyViewController: UIViewController,UIPickerViewDataSource,UIPickerVi
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return coinManager.currencyArray.count
+        return K.currencyArray.count
     }
 }
 extension CurrencyViewController: updateUIDelegate {
     func handleError(_ error: Error) {
         print(error)
         DispatchQueue.main.async {
-            let alertView = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)
-            alertView.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            let alertView = UIAlertController(title: K.error, message: error.localizedDescription, preferredStyle: .alert)
+            alertView.addAction(UIAlertAction(title: K.titleOK, style: .default, handler: nil))
             self.present(alertView, animated: true, completion: nil)
         }
     }
